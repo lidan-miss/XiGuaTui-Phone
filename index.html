@@ -1,0 +1,254 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,width=device-width,initial-scale=1.0,user-scalable=no"/>
+<title>无标题文档</title>
+<link href="css/css.css" rel="stylesheet" type="text/css">
+<link href="css/onepage-scroll.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="http://lib.sinaapp.com/js/jquery/1.9.1/jquery-1.9.1.min.js"></script>
+<script src="js/jquery.onepage-scroll.js"></script>
+<script>
+$(function(){
+	$('.main').onepage_scroll({
+		sectionContainer: 'section',
+		loop: false,  
+        easing: "ease",
+        animationTime: 500,
+        pagination: false
+	});
+
+    $('.long').scroll(function(){
+        var scrollTop = $(this).scrollTop(),
+            elHeight = $(this).height(),
+            scrollHeight = $(this).get(0).scrollHeight;
+        if(scrollTop == 0){ //顶部
+            $(this).addClass('long-start').removeClass('long-in long-end');
+        } else if((scrollTop + elHeight) == scrollHeight){ //底部
+            $(this).addClass('long-end').removeClass('long-start long-in');
+        } else{ //中部
+            $(this).removeClass('long-end long-start').addClass('long-in');
+        }
+    })
+
+});
+</script>
+<style type="text/css">
+.long{ overflow: scroll !important;}
+.long .slide-up{ position: relative; margin-left: 0; left: 0; width: 100%;}
+</style>
+</head>
+
+<body>
+<div class="main">
+    <section class="page1 animate">
+        <div class="maincontainer">
+            <div class="logo">
+                <div class="circle">
+                    <img src="images/1.jpg">
+                 </div>
+            </div>
+            <div class="wechat-entry animatePlay">
+                <h1>犀牛故事</h1>
+                <p>微信号：storyboom</p>
+            </div>
+            <div class="wechat-summary">
+                <p>在一千零一夜之后，这可能是一个最会讲故事的官方订阅号。不单是这个公众号的运营团队知名畅书作者，也因为它号召了许多有故事的人。创作、分享、倾听、交流</p>
+    
+                <p>这就是一个小故事在读者内心引发的蝴蝶效应。</p>
+            </div>
+            <div class="slide-up">向上滑动屏幕</div>
+        </div>
+    </section>
+    <section class="page2 animate">
+         <div class="maincontainer">
+            
+            <div class="slide-up">向上滑动屏幕</div>
+        </div>
+    </section>
+    <section class="page3 animate">
+        <div class="maincontainer">
+        	
+            <div class="slide-up">向上滑动屏幕</div>
+        </div>
+    </section>
+    <section class="page4 animate">
+        <div class="maincontainer">
+                	
+            <div class="read-number">
+                <dl class="post-article-number">
+                    <dt class="ico ico-post"></dt>
+                    <dd>发文篇数<br><span class="number">1164篇</span></dd>
+                </dl>
+                <dl class="total-article-number">
+                    <dt class="ico ico-read"></dt>
+                    <dd>总阅读<br><span class="number">1624万</span></dd>
+                </dl>
+                <dl class="like-number">
+                    <dt class="ico ico-like"></dt>
+                    <dd>总点赞<br><span class="number">42万</span></dd>
+                </dl>
+            </div>
+            
+            <div class="sub-nav">
+                <div class="tag">/ 粉丝印象</div>
+            </div>
+            <div class="fans-impression">
+                <ul class="clearfix">
+                    <li><a href="#">故事</a></li>
+                    <li><a href="#">爱情</a></li>
+                    <li><a href="#">厦门</a></li>
+                    <li><a href="#">感情</a></li>
+                    <li><a href="#">鼓浪屿</a></li>
+                    <li><a href="#">鼓浪屿</a></li>
+                    <li><a href="#">鼓浪屿</a></li>
+                    <li><a href="#">鼓浪屿</a></li>
+                    <li><a href="#">故事</a></li>
+                    <li><a href="#">故事</a></li>
+                </ul>
+            </div>
+            <div class="slide-up">向上滑动屏幕</div>
+            
+        </div>
+    </section>
+    <section class="page5 animate">
+        <div class="maincontainer">
+                	
+            <div class="sub-nav">
+                <div class="tag">/ 时间轴</div>
+            </div>
+            <div class="clock">
+                <span class="hand second"></span>
+                <span class="hand minute"></span>
+            </div>
+            <h2>2015年6月17日创刊</h2>
+            <div class="time">
+                <dl>
+                    <dt><i class="dividing-line"></i><div class="doc"></div></dt>
+                    <dd>2015年</dd>
+                    <dd>2016年</dd>
+                </dl>
+            </div>
+            <h3>第一篇推文</h3>
+            <div class="article-list">
+                <dl>
+                	<a href="#">
+                    <dt><img src="images/2.jpg"></dt>
+                    <dd>如何找到喜欢做的事，成为想成为的人？</dd>
+                    </a>
+                </dl> 
+            </div>
+            <div class="slide-up">向上滑动屏幕</div>
+            
+        </div>
+    </section>
+    <section class="page6 animate">
+        <div class="maincontainer">
+        	
+            <div class="sub-nav">
+                <div class="tag">/ 时间轴</div>
+            </div>
+            <div class="article-title text1">最早最晚发文时间</div>
+            <div class="published-article-time">
+                <dl class="earliest-post">
+                    <dt></dt>
+                    <dd>最早发文时间 :<br><span class="text1">00时16分</span></dd>
+                </dl>
+                <dl class="atest-post">
+                    <dt></dt>
+                    <dd>最晚发文时间 :<br><span class="text1">11时59分</span></dd>
+                </dl>
+            </div>
+            <div class="slide-up">向上滑动屏幕</div>
+            
+        </div>
+    </section>
+    <section class="page7 animate long">
+        <div class="maincontainer">
+                	
+            <div class="sub-nav">
+                <div class="tag">/ 公众号特色</div>
+            </div>
+            <div class="listing-title text1">清单</div>
+            <p>世界太芜杂，我帮你整理。每天分享一篇生活、电影、阅读、设计领域兼具实用和诗性的清单。</p>
+            <div class="public-feature">
+                <p>每天推荐一份清单，打包整理好的实用信息</p>
+                <p><img src="images/3.jpg" ></p>
+                <p>【清单日签】想和这个世界谈谈，每天聊一点生活态度</p>
+                <p><img src="images/4.jpg"></p>
+            </div>
+
+            
+            <div class="slide-up">向上滑动屏幕</div>
+            
+        </div>
+    </section>
+    <section class="page8 animate">
+        <div class="maincontainer">
+                	
+            <div class="popular-articles">
+                <div class="article-title text1">最早最晚发文时间</div>
+                <div class="article-list">
+                <dl>
+                	<a href="#">
+                    <dt><img src="images/2.jpg"></dt>
+                    <dd>如何找到喜欢做的事，成为想成为的人？</dd>
+                    </a>
+                </dl>
+                <dl>
+                	<a href="#">
+                    <dt><img src="images/2.jpg"></dt>
+                    <dd>Scalers：我为什么一直持续写长文？</dd>
+                    </a>
+                </dl>
+                <dl>
+                	<a href="#">
+                    <dt><img src="images/2.jpg"></dt>
+                    <dd>如何找到喜欢做的事，成为想成为的人？</dd>
+                    </a>
+                </dl>
+                <dl>
+                	<a href="#">
+                    <dt><img src="images/2.jpg"></dt>
+                    <dd>我们这一代人大都比较欠缺的两种最基本的优秀品质 </dd>
+                    </a>
+                </dl>
+                
+            </div>
+            </div>
+            
+            <div class="slide-up">向上滑动屏幕</div>
+            
+        </div>
+    </section>
+    <section class="page9 animate">
+        <div class="maincontainer">
+            <div class="logo">
+                <div class="circle">
+                    <img src="images/1.jpg">
+                 </div>
+            </div>
+            <div class="wechat-entry animatePlay">
+                <h1>犀牛故事</h1>
+                <p>微信号：storyboom</p>
+            </div>
+            <div class="btns">
+                <div class="btn btn1">关注他</div>
+                <div class="btn btn2">分享给朋友</div>
+            </div>
+            <div class="code-attention">
+                <dl class="clearfix">
+                    <dt><img src="images/code.png"></dt>
+                    <dd><h1>西瓜推</h1>
+                    长按识别图中二维码<br>
+                    关注我们查看更多公众号<br>
+                    </dd>
+                </dl>
+            </div>
+            
+      </div>
+    </section>
+</div>             
+
+</body>
+</html>
